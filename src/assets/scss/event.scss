@@ -1,0 +1,103 @@
+
+.event_container{
+    width: 100%;
+    .event_wrapper{
+        @include wrapper;
+    }
+}
+.event_page_title{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    .page_title{
+        position: relative;
+        @include heading_CN(48px, 72px);
+    }
+}
+.event_title_pac_man{
+    display: flex;
+    padding: 0 30px;
+    .dot{
+        @include base(6px, 6px);
+        align-self: center;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 0 6px;
+    }
+    .dot_lg{
+        @include base(11px, 11px);
+        background-color: $P1_Primary_Color_01;
+        box-shadow: 0 0 3px $P1_Primary_Color_01;
+    }
+    .event_pac_man_img{
+        align-self: center;
+        @include base(38px, 38px);
+    }
+}
+.event_cards_flow{
+    display: flex;
+    justify-content: space-between;
+    .event_arrow_img_box{
+        align-self: center;
+    }
+}
+.event_cards_group{
+    display: flex;
+    width: 520px;
+    border: 3px solid $N1_Primary_Text;
+    border-radius: 32px;
+    // padding: 40px;
+    .event_img_box{
+        align-self: center;
+        padding: 0 60px;
+    }
+    .event_live_stream{
+        align-self: center;
+    }
+    .event_live_stream_img_box{
+        margin: auto;
+    }
+}
+.event_cards_group:hover h3{
+    color: $P1_Primary_Color_01;
+    text-shadow: 0 0 3px $P1_Primary_Color_01;
+}
+.event_cards_group:hover{
+    border: 3px solid $P1_Primary_Color_01;
+    background-color: #6E77E91A;
+    transition: .2s ease-in;
+}
+.event_img_box img{
+    @include base(88px, 106px);
+}
+.event_content{
+    box-sizing: border-box;
+    padding: 0 40px;
+    color: $N1_Primary_Text;
+    .line{
+        @include margin_auto;
+        @include base(2px, 12px);
+        background-color: $N1_Primary_Text;
+    }
+    .accent_word{
+        padding-right: 10px;
+    }
+}
+.event_arrow_img_box{
+    .event_arrow_img{
+        width: 40px;
+    }
+}
+.arrow_middle{
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15%;
+    .blank .event_arrow_img{
+        transform: rotate(90deg);
+        margin: 0 auto;
+    }
+}
+.third_arrow{
+    transform: rotate(180deg);
+}

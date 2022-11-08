@@ -1,0 +1,65 @@
+.wish_container{
+    width: 100%;
+    min-height: 1000px;
+    .wish_wrapper{
+        @include wrapper;
+        max-width: 900px;
+    }
+}
+.wish_animation_img_box{
+    position: relative;
+    display: flex;
+    .wish_img_rect1{
+        @include base(280px,105px);
+    }
+    .wish_img_star{
+        @include base(63px,63px);
+        position: absolute;
+        right: 55%;
+    }
+    .wish_img_purple1{
+        @include base(540px,197px);
+    }
+    .wish_img_question{
+        @include base(174px,136px);
+        position: absolute;
+        right: 15%;
+        top: -10%;
+    }
+    .wish_img_surprise{
+        @include base(240px,180px);
+    }
+    .wish_img_maru{
+        @include base(90px,90px);
+    }
+    .wish_img_green{
+        @include base(504px,187px);
+        position: absolute;
+        right: 0;
+        top: -50%;
+    }
+    .wish_img_rect2{
+        @include base(350px,115px);
+        position: absolute;
+        left: 30%;
+        top: -60px;
+    }
+    .wish_img_polygon{
+        @include base(131px,70px);
+        position: absolute;
+        left: 75%;
+        top: -60px;
+    }
+    .wish_img_eyes{
+        @include base(193px,158px);
+        position: absolute;
+        left: 74%;
+        top: 50px;
+    }
+    .wish_img_purple2{
+        @include base(520px,197px);
+        position: absolute;
+        left: 10%;
+        top: 70px;
+    }
+}
